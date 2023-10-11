@@ -5,5 +5,4 @@
 📖 When I'm not coding, you'll find me at the gym or bar hopping.
 🔗 Let's connect! https://www.linkedin.com/in/rajat-tiwari-biz/ , https://www.instagram.com/rajat1299/
 
-#TechStack: #[Tech1] #[Tech2] #[Tech3] ...
 
