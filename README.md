@@ -5,11 +5,7 @@
 📖 When I'm not coding, you'll find me at the gym or curating interesting things.
 
 
-📈 My GitHub Stats
 
-
-
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=rajat1299&layout=compact&theme=radical)
 
 ## 💡 Random Tech Quote
 
