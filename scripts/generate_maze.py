@@ -367,7 +367,7 @@ def main():
     
     os.makedirs('dist', exist_ok=True)
     
-    with open('dist/maze-pathfinding.svg', 'w') as f:
+    with open('dist/circular-maze.svg', 'w') as f:
         f.write(svg_content)
     
     print("Generated circular maze with neon glow")
