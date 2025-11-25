@@ -6,7 +6,11 @@ Software engineer building backend systems, AI infrastructure, and model develop
 
 <br>
 
-<img src="https://raw.githubusercontent.com/rajat1299/rajat1299/main/assets/signature.svg" alt="" width="600"/>
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/game-of-life.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/game-of-life.svg" />
+  <img alt="Game of Life" src="https://raw.githubusercontent.com/rajat1299/rajat1299/output/game-of-life.svg" />
+</picture>
 
 <br>
 
