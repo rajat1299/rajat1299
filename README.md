@@ -7,9 +7,9 @@ Software engineer building backend systems, AI infrastructure, and model develop
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/game-of-life.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/game-of-life.svg" />
-  <img alt="Game of Life" src="https://raw.githubusercontent.com/rajat1299/rajat1299/output/game-of-life.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/maze-pathfinding.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/maze-pathfinding.svg" />
+  <img alt="A* Pathfinding" src="https://raw.githubusercontent.com/rajat1299/rajat1299/output/maze-pathfinding.svg" />
 </picture>
 
 <br>
