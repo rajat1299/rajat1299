@@ -1,0 +1,45 @@
+name: generate animation
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+      - snake
+      - main
+
+permissions:
+  contents: write
+
+concurrency:
+  group: snake-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Generate contribution animations
+        uses: Platane/snk@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/snake-aurora.svg?color_snake=#16f3b1&color_dots=#0a1c2c,#144552,#0e9594,#5bc0be,#c4fff9
+            dist/snake-ember.svg?color_snake=#ff5f6d&color_dots=#121212,#1f1f1f,#f25c54,#f4845f,#f7b267
+            dist/snake-vapor.gif?color_snake=#b388ff&color_dots=#0b132b,#1c2541,#3a506b,#5bc0be,#bbe6e4&color_background=#050915
+
+      - name: Push animations to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+          keep_history: false
+          commit_message: "chore: update snake animations"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
