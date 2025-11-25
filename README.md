@@ -16,10 +16,11 @@ When I'm not building, you'll find me on long walks, in the gym, or lost in musi
 ---
 
 ### Visual rhythm
+Growing “code garden” for the core focus areas.
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/snake-ember.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/snake-aurora.svg" />
-  <img alt="Animated grid snake" src="https://raw.githubusercontent.com/rajat1299/rajat1299/output/snake-aurora.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/code-garden.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/rajat1299/rajat1299/output/code-garden.svg" />
+  <img alt="Animated code garden" src="https://raw.githubusercontent.com/rajat1299/rajat1299/output/code-garden.svg" />
 </picture>
 
 ---
