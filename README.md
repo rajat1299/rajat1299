@@ -10,6 +10,8 @@ I build tools that make developers more productive and products that make people
 
 ## Current Projects
 
+- 🤖 **[MicroLLM Lab](https://github.com/rajat1299/MicroLLM-Lab)** -  Laboratory for training and inspecting small language models from scratch. Built for learning. Based on Karpathy's beautiful minimal GPT algorithm.
+
 - 🧠 **[Mémoire](https://github.com/rajat1299/ai-memory-engine)** — Production-grade memory engine for AI agents.
 
 - 🤝 **[Cowork](https://github.com/rajat1299/Cowork)** — Open source autonomous work agent. Describe an outcome, step away, come back to finished work—documents, organized files, synthesized research.
