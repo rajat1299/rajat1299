@@ -1,0 +1,114 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-label="Animated code garden for Rajat's focus areas">
+  <style>
+    :root {
+      --bg1: #081221;
+      --bg2: #0d233d;
+      --grid: rgba(255, 255, 255, 0.06);
+      --stem: #1dd3b0;
+      --leaf: #4fe3c1;
+      --leaf2: #8fffe9;
+      --label: #e3f7ff;
+      --spark: #68d7ff;
+      --pulse: #1dd3b0;
+      --ground: #0f2b46;
+    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        --bg1: #f1f6ff;
+        --bg2: #dfe8ff;
+        --grid: rgba(0, 27, 71, 0.07);
+        --stem: #0fb28a;
+        --leaf: #1ed9af;
+        --leaf2: #57f3d1;
+        --label: #0d2742;
+        --spark: #3c82ff;
+        --pulse: #0fb28a;
+        --ground: #c7d8f5;
+      }
+    }
+    * { box-sizing: border-box; }
+    svg { background: linear-gradient(135deg, var(--bg1), var(--bg2)); }
+    .ground { fill: none; stroke: var(--ground); stroke-width: 14; stroke-linecap: round; opacity: 0.7; }
+    .plant { animation: sway 7s ease-in-out infinite; transform-origin: center 180px; }
+    .plant.fast { animation-duration: 5.4s; }
+    .plant.slow { animation-duration: 8.4s; }
+    .stem { stroke: var(--stem); stroke-width: 4; fill: none; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 0 6px rgba(29,211,176,0.35)); stroke-dasharray: 180; stroke-dashoffset: 180; animation: grow 3.8s ease-out forwards; }
+    .leaf { fill: var(--leaf); opacity: 0.9; transform-origin: center; animation: breathe 3.2s ease-in-out infinite; filter: drop-shadow(0 0 6px rgba(79,227,193,0.35)); }
+    .leaf.alt { fill: var(--leaf2); opacity: 0.8; }
+    .bud { fill: var(--pulse); opacity: 0.85; animation: pulse 2.8s ease-in-out infinite; }
+    .label { font-family: "Segoe UI", "Helvetica Neue", Arial, sans-serif; font-size: 16px; fill: var(--label); text-anchor: middle; opacity: 0.9; }
+    .spark { fill: var(--spark); opacity: 0.8; animation: float 6s ease-in-out infinite alternate; }
+    .spark:nth-of-type(odd) { animation-duration: 8s; animation-delay: -2s; }
+    @keyframes sway { 0% { transform: rotate(-1deg); } 50% { transform: rotate(2deg); } 100% { transform: rotate(-1deg); } }
+    @keyframes grow { 0% { stroke-dashoffset: 180; } 100% { stroke-dashoffset: 0; } }
+    @keyframes breathe { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.06); } }
+    @keyframes pulse { 0%, 100% { r: 6; opacity: 0.85; } 50% { r: 8; opacity: 1; } }
+    @keyframes float { 0% { transform: translateY(0); opacity: 0.6; } 50% { transform: translateY(-12px); opacity: 1; } 100% { transform: translateY(0); opacity: 0.6; } }
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="var(--bg1)" />
+      <stop offset="100%" stop-color="var(--bg2)" />
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <line x1="0" y1="0" x2="0" y2="40" stroke="var(--grid)" stroke-width="1" />
+      <line x1="0" y1="0" x2="40" y2="0" stroke="var(--grid)" stroke-width="1" />
+    </pattern>
+  </defs>
+  <rect width="1200" height="360" fill="url(#bg)" />
+  <rect width="1200" height="360" fill="url(#grid)" />
+  <path class="ground" d="M40 295 Q 320 280 600 295 T 1160 295" />
+
+  <g transform="translate(120 40) scale(1.0)" class="plant slow">
+    <path class="stem" d="M0 230 C -12 190 -8 150 0 110 C 10 70 6 40 0 10" />
+    <path class="leaf" d="M0 140 C 30 130 34 96 4 86 C -20 96 -16 126 0 140Z" />
+    <path class="leaf alt" d="M0 100 C -32 90 -34 64 -6 54 C 16 64 12 88 0 100Z" />
+    <circle class="bud" cx="0" cy="6" r="6" />
+    <text class="label" x="0" y="260">Realtime</text>
+  </g>
+
+  <g transform="translate(360 30) scale(1.05)" class="plant fast">
+    <path class="stem" d="M0 240 C 8 200 10 152 -2 116 C -10 82 -6 44 0 8" />
+    <path class="leaf alt" d="M0 150 C -30 140 -32 108 -8 96 C 12 108 14 136 0 150Z" />
+    <path class="leaf" d="M0 90 C 34 82 38 52 6 44 C -18 52 -16 78 0 90Z" />
+    <circle class="bud" cx="0" cy="4" r="6" />
+    <text class="label" x="0" y="270">Autonomy</text>
+  </g>
+
+  <g transform="translate(620 45) scale(1.1)" class="plant">
+    <path class="stem" d="M0 225 C -10 190 -12 150 0 110 C 14 76 16 44 0 12" />
+    <path class="leaf" d="M0 150 C 26 142 30 110 6 102 C -18 110 -16 136 0 150Z" />
+    <path class="leaf alt" d="M0 86 C -30 74 -34 46 -10 38 C 14 46 18 72 0 86Z" />
+    <circle class="bud" cx="0" cy="6" r="6" />
+    <text class="label" x="0" y="255">AI Systems</text>
+  </g>
+
+  <g transform="translate(880 35) scale(0.98)" class="plant fast">
+    <path class="stem" d="M0 235 C 12 198 10 156 -2 120 C -10 88 -8 50 0 14" />
+    <path class="leaf alt" d="M0 156 C -26 144 -30 118 -8 108 C 12 118 18 140 0 156Z" />
+    <path class="leaf" d="M0 102 C 28 92 32 64 6 56 C -18 64 -18 88 0 102Z" />
+    <circle class="bud" cx="0" cy="6" r="6" />
+    <text class="label" x="0" y="266">Human Experience</text>
+  </g>
+
+  <g transform="translate(1120 42) scale(0.9)" class="plant slow">
+    <path class="stem" d="M0 232 C -8 194 -10 150 0 112 C 12 78 14 46 0 14" />
+    <path class="leaf" d="M0 154 C 24 146 28 114 6 106 C -18 114 -18 138 0 154Z" />
+    <path class="leaf alt" d="M0 94 C -24 82 -28 56 -8 48 C 12 56 16 80 0 94Z" />
+    <circle class="bud" cx="0" cy="6" r="6" />
+    <text class="label" x="0" y="262">Infra & Observability</text>
+  </g>
+
+  <g class="spark" transform="translate(180 90)">
+    <circle r="3" />
+  </g>
+  <g class="spark" transform="translate(520 70)">
+    <circle r="4" />
+  </g>
+  <g class="spark" transform="translate(760 120)">
+    <circle r="3.5" />
+  </g>
+  <g class="spark" transform="translate(1040 80)">
+    <circle r="3" />
+  </g>
+</svg>
